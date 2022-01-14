@@ -8,7 +8,7 @@ ENV PATH $PATH:/root/.local/bin
 RUN yum -y groupinstall "Development Tools"
 RUN yum -y groupinstall development
 RUN yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-RUN yum -y install https://centos7.iuscommunity.org/ius-release.rpm
+RUN yum -y install https://repo.ius.io/ius-release-el7.rpm https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 RUN yum -y install zlib-devel
 RUN yum -y install openssl-devel
 RUN yum -y install libffi-devel
